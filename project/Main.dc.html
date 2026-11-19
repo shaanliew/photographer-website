@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Alice Huang – Wedding and Portrait Photographer</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400&amp;family=DM+Sans:wght@400;500&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+html{scroll-behavior:smooth}
+a{color:inherit}
+a:focus-visible{outline:2px solid #2B2622;outline-offset:4px}
+.cta:hover{background:#4A4137}
+.mail:hover{text-decoration-color:#2B2622}
+#contact{scroll-margin-top:0}
+@media (max-width:720px){
+  .grid{grid-template-columns:minmax(0,1fr) !important;gap:32px !important}
+  .two{flex-direction:column !important;gap:24px !important}
+}
+</style>
+</helmet>
+
+<div style="background: {{ground}}; color: #2B2622; font-family: 'DM Sans', system-ui, sans-serif; font-size: 18px; line-height: 1.65; width: 100%; box-sizing: border-box">
+
+  <!-- Hero -->
+  <section style="min-height: 700px; box-sizing: border-box; padding: 96px clamp(24px, 7vw, 96px); display: flex; flex-direction: column; justify-content: center; gap: 32px; max-width: 1360px; margin: 0 auto">
+    <h1 style="margin: 0; font-family: 'Fraunces', Georgia, serif; font-weight: 300; font-size: clamp(56px, 10vw, 136px); line-height: 1; letter-spacing: -0.02em">Alice Huang</h1>
+    <p style="margin: 0; max-width: 520px; font-size: clamp(19px, 2vw, 24px); line-height: 1.5; color: #4A4137">I photograph weddings and portraits, with a soft spot for the quiet moments in between.</p>
+    <div style="margin-top: 16px">
+      <a class="cta" href="#contact" style="display: inline-flex; align-items: center; min-height: 52px; padding: 0 36px; box-sizing: border-box; background: #2B2622; color: #F4F0E9; border-radius: 999px; font-size: 17px; font-weight: 500; text-decoration: none; letter-spacing: 0.01em">Get in touch</a>
+    </div>
+  </section>
+
+  <!-- Portfolio -->
+  <section style="padding: 80px clamp(24px, 7vw, 96px) 140px; box-sizing: border-box; max-width: 1360px; margin: 0 auto">
+    <h2 style="margin: 0 0 56px; font-family: 'Fraunces', Georgia, serif; font-weight: 300; font-size: clamp(32px, 4vw, 48px); line-height: 1.15">Selected work</h2>
+    <div class="grid" style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 40px">
+      <figure style="margin: 0"><img src="/_blob/7018c0b2619a304eed9a3d7d3e30852d" alt="A bride and groom kiss behind a bouquet of white flowers on a lakeside platform" style="display: block; width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: center 40%"></figure>
+      <figure style="margin: 0"><div style="aspect-ratio: 4 / 5; background: #CFC6B8; display: flex; align-items: flex-end; padding: 20px; box-sizing: border-box"><span style="font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #4A4137">Portrait · 02</span></div></figure>
+      <figure style="margin: 0"><div style="aspect-ratio: 4 / 5; background: #D3D0C4; display: flex; align-items: flex-end; padding: 20px; box-sizing: border-box"><span style="font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #4A4137">Wedding · 03</span></div></figure>
+      <figure style="margin: 0"><div style="aspect-ratio: 4 / 5; background: #D9CCC4; display: flex; align-items: flex-end; padding: 20px; box-sizing: border-box"><span style="font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #4A4137">Portrait · 04</span></div></figure>
+      <figure style="margin: 0"><div style="aspect-ratio: 4 / 5; background: #CBC7BF; display: flex; align-items: flex-end; padding: 20px; box-sizing: border-box"><span style="font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #4A4137">Wedding · 05</span></div></figure>
+      <figure style="margin: 0"><div style="aspect-ratio: 4 / 5; background: #D5CDBF; display: flex; align-items: flex-end; padding: 20px; box-sizing: border-box"><span style="font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #4A4137">Portrait · 06</span></div></figure>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section style="padding: 40px clamp(24px, 7vw, 96px) 160px; box-sizing: border-box; max-width: 1360px; margin: 0 auto">
+    <div class="two" style="display: flex; gap: 96px; align-items: flex-start">
+      <h2 style="margin: 0; flex: 0 0 340px; font-family: 'Fraunces', Georgia, serif; font-weight: 300; font-size: clamp(32px, 4vw, 48px); line-height: 1.15">Hello, I'm Alice Huang.</h2>
+      <div style="flex: 1 1 0; min-width: 0; max-width: 560px; display: flex; flex-direction: column; gap: 24px; color: #4A4137">
+        <p style="margin: 0">I'm a freelance photographer based in [your city], and I shoot weddings and portraits. What I care about most is the in-between: the nervous laugh before the vows, the look someone gives when they've stopped posing.</p>
+        <p style="margin: 0">I keep things relaxed and unhurried, so you can forget the camera and be yourselves. You'll end up with photographs that feel like you.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" style="padding: 120px clamp(24px, 7vw, 96px) 96px; box-sizing: border-box; max-width: 1360px; margin: 0 auto; border-top: 1px solid #CFC6B8">
+    <h2 style="margin: 0 0 24px; font-family: 'Fraunces', Georgia, serif; font-weight: 300; font-size: clamp(32px, 4vw, 48px); line-height: 1.15">Let's talk.</h2>
+    <p style="margin: 0 0 32px; max-width: 480px; color: #4A4137">Tell me about your day, or the portrait you have in mind. I'd love to hear about it.</p>
+    <a class="mail" href="mailto:hello@yourname.com" style="font-family: 'Fraunces', Georgia, serif; font-weight: 300; font-size: clamp(26px, 4.5vw, 56px); line-height: 1.2; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 8px; text-decoration-color: #8A7F72; word-break: break-word">[hello@alicehuang.com]</a>
+    <p style="margin: 120px 0 0; font-size: 14px; color: #5E554C">© Alice Huang</p>
+  </section>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"ground":{"editor":"color","default":"#E9E4DC","options":["#E9E4DC","#EFEBE4","#E2DCD2","#DDD8D0"]},"$preview":{"width":1360,"height":2800}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return { ground: this.props.ground ?? '#E9E4DC' };
+  }
+}
+</script>
+</body>
+</html>
